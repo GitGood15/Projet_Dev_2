@@ -1,0 +1,1102 @@
+[
+  {
+    "question": "Quelle est la capitale du Japon ?",
+    "a": "Séoul",
+    "b": "Tokyo",
+    "c": "Pékin",
+    "d": "Bangkok",
+    "domaine": "Géographie",
+    "difficulte": "facile",
+    "reponse": "b"
+  },
+  {
+    "question": "Quel océan borde la côte ouest de l’Afrique ?",
+    "a": "Océan Indien",
+    "b": "Océan Arctique",
+    "c": "Océan Atlantique",
+    "d": "Océan Pacifique",
+    "domaine": "Géographie",
+    "difficulte": "facile",
+    "reponse": "c"
+  },
+  {
+    "question": "Dans quel pays se trouve la ville de Kyoto ?",
+    "a": "Chine",
+    "b": "Japon",
+    "c": "Thaïlande",
+    "d": "Corée du Sud",
+    "domaine": "Géographie",
+    "difficulte": "facile",
+    "reponse": "b"
+  },
+  {
+    "question": "Quel est le plus long fleuve d’Europe ?",
+    "a": "Le Danube",
+    "b": "Le Rhin",
+    "c": "La Volga",
+    "d": "La Seine",
+    "domaine": "Géographie",
+    "difficulte": "moyen",
+    "reponse": "c"
+  },
+  {
+    "question": "Quel pays a pour capitale Ottawa ?",
+    "a": "Australie",
+    "b": "Canada",
+    "c": "Irlande",
+    "d": "Nouvelle-Zélande",
+    "domaine": "Géographie",
+    "difficulte": "facile",
+    "reponse": "b"
+  },
+  {
+    "question": "Sur quel continent se trouve le désert du Sahara ?",
+    "a": "Asie",
+    "b": "Afrique",
+    "c": "Amérique du Sud",
+    "d": "Océanie",
+    "domaine": "Géographie",
+    "difficulte": "facile",
+    "reponse": "b"
+  },
+  {
+    "question": "Quelle chaîne de montagnes sépare en partie la France et l’Espagne ?",
+    "a": "Les Alpes",
+    "b": "Les Carpates",
+    "c": "Les Pyrénées",
+    "d": "Les Apennins",
+    "domaine": "Géographie",
+    "difficulte": "facile",
+    "reponse": "c"
+  },
+  {
+    "question": "Quel est le plus grand pays du monde par superficie ?",
+    "a": "Canada",
+    "b": "Chine",
+    "c": "États-Unis",
+    "d": "Russie",
+    "domaine": "Géographie",
+    "difficulte": "facile",
+    "reponse": "d"
+  },
+  {
+    "question": "Quelle mer borde notamment la Jordanie et Israël à l’est ?",
+    "a": "Mer Rouge",
+    "b": "Mer Morte",
+    "c": "Mer Noire",
+    "d": "Mer Caspienne",
+    "domaine": "Géographie",
+    "difficulte": "moyen",
+    "reponse": "b"
+  },
+  {
+    "question": "Quelle est la capitale du Maroc ?",
+    "a": "Casablanca",
+    "b": "Marrakech",
+    "c": "Rabat",
+    "d": "Fès",
+    "domaine": "Géographie",
+    "difficulte": "facile",
+    "reponse": "c"
+  },
+  {
+    "question": "Quel gaz les plantes absorbent-elles principalement pour la photosynthèse ?",
+    "a": "Oxygène",
+    "b": "Azote",
+    "c": "Dioxyde de carbone",
+    "d": "Hydrogène",
+    "domaine": "Sciences",
+    "difficulte": "facile",
+    "reponse": "c"
+  },
+  {
+    "question": "Combien de chromosomes possède normalement une cellule humaine somatique ?",
+    "a": "23",
+    "b": "46",
+    "c": "44",
+    "d": "48",
+    "domaine": "Sciences",
+    "difficulte": "moyen",
+    "reponse": "b"
+  },
+  {
+    "question": "Quelle planète est surnommée la planète rouge ?",
+    "a": "Vénus",
+    "b": "Mars",
+    "c": "Jupiter",
+    "d": "Mercure",
+    "domaine": "Sciences",
+    "difficulte": "facile",
+    "reponse": "b"
+  },
+  {
+    "question": "Quel organe pompe le sang dans le corps humain ?",
+    "a": "Le foie",
+    "b": "Le cerveau",
+    "c": "Le cœur",
+    "d": "Les reins",
+    "domaine": "Sciences",
+    "difficulte": "facile",
+    "reponse": "c"
+  },
+  {
+    "question": "À quelle température l’eau bout-elle à pression atmosphérique normale ?",
+    "a": "50 °C",
+    "b": "90 °C",
+    "c": "100 °C",
+    "d": "120 °C",
+    "domaine": "Sciences",
+    "difficulte": "facile",
+    "reponse": "c"
+  },
+  {
+    "question": "Quelle particule porte une charge électrique négative ?",
+    "a": "Proton",
+    "b": "Neutron",
+    "c": "Électron",
+    "d": "Photon",
+    "domaine": "Sciences",
+    "difficulte": "moyen",
+    "reponse": "c"
+  },
+  {
+    "question": "Quel est le symbole chimique du sodium ?",
+    "a": "S",
+    "b": "So",
+    "c": "Na",
+    "d": "N",
+    "domaine": "Sciences",
+    "difficulte": "facile",
+    "reponse": "c"
+  },
+  {
+    "question": "Quel phénomène explique la déviation de la lumière lorsqu’elle passe d’un milieu à un autre ?",
+    "a": "Réflexion",
+    "b": "Réfraction",
+    "c": "Diffraction",
+    "d": "Absorption",
+    "domaine": "Sciences",
+    "difficulte": "moyen",
+    "reponse": "b"
+  },
+  {
+    "question": "Quel est le rôle principal des globules rouges ?",
+    "a": "Combattre les infections",
+    "b": "Transporter l’oxygène",
+    "c": "Coaguler le sang",
+    "d": "Produire des hormones",
+    "domaine": "Sciences",
+    "difficulte": "facile",
+    "reponse": "b"
+  },
+  {
+    "question": "Quelle unité mesure la fréquence ?",
+    "a": "Volt",
+    "b": "Hertz",
+    "c": "Watt",
+    "d": "Joule",
+    "domaine": "Sciences",
+    "difficulte": "facile",
+    "reponse": "b"
+  },
+  {
+    "question": "Quel langage est principalement exécuté par les navigateurs web ?",
+    "a": "C",
+    "b": "JavaScript",
+    "c": "SQL",
+    "d": "Bash",
+    "domaine": "Informatique",
+    "difficulte": "facile",
+    "reponse": "b"
+  },
+  {
+    "question": "Quelle structure de données fonctionne selon le principe LIFO ?",
+    "a": "File",
+    "b": "Pile",
+    "c": "Arbre",
+    "d": "Graphe",
+    "domaine": "Informatique",
+    "difficulte": "moyen",
+    "reponse": "b"
+  },
+  {
+    "question": "Que signifie l’acronyme CPU ?",
+    "a": "Central Processing Unit",
+    "b": "Computer Personal Utility",
+    "c": "Core Program Upload",
+    "d": "Central Print Unit",
+    "domaine": "Informatique",
+    "difficulte": "facile",
+    "reponse": "a"
+  },
+  {
+    "question": "Quel protocole est couramment utilisé pour consulter des pages web de manière sécurisée ?",
+    "a": "FTP",
+    "b": "HTTP sans chiffrement",
+    "c": "HTTPS",
+    "d": "SMTP",
+    "domaine": "Informatique",
+    "difficulte": "facile",
+    "reponse": "c"
+  },
+  {
+    "question": "En Python, quel symbole permet d’obtenir le reste d’une division ?",
+    "a": "/",
+    "b": "//",
+    "c": "%",
+    "d": "**",
+    "domaine": "Informatique",
+    "difficulte": "facile",
+    "reponse": "c"
+  },
+  {
+    "question": "Quelle est la complexité moyenne d’une recherche dans une table de hachage bien dimensionnée ?",
+    "a": "O(1)",
+    "b": "O(log n)",
+    "c": "O(n)",
+    "d": "O(n²)",
+    "domaine": "Informatique",
+    "difficulte": "difficile",
+    "reponse": "a"
+  },
+  {
+    "question": "À quoi sert principalement Git ?",
+    "a": "Créer des bases de données",
+    "b": "Gérer les versions du code",
+    "c": "Compiler du matériel",
+    "d": "Héberger des sites web",
+    "domaine": "Informatique",
+    "difficulte": "facile",
+    "reponse": "b"
+  },
+  {
+    "question": "Quel type de base de données organise généralement les données en tables reliées ?",
+    "a": "Base relationnelle",
+    "b": "Base orientée documents",
+    "c": "Base clé-valeur",
+    "d": "Base graphe uniquement",
+    "domaine": "Informatique",
+    "difficulte": "facile",
+    "reponse": "a"
+  },
+  {
+    "question": "Que renvoie len([4, 7, 9]) en Python ?",
+    "a": "2",
+    "b": "3",
+    "c": "4",
+    "d": "9",
+    "domaine": "Informatique",
+    "difficulte": "facile",
+    "reponse": "b"
+  },
+  {
+    "question": "Quel mécanisme permet à plusieurs processus de partager le temps du processeur ?",
+    "a": "Multitâche",
+    "b": "Compression",
+    "c": "Réplication",
+    "d": "Chiffrement",
+    "domaine": "Informatique",
+    "difficulte": "moyen",
+    "reponse": "a"
+  },
+  {
+    "question": "Qui a écrit Les Misérables ?",
+    "a": "Émile Zola",
+    "b": "Victor Hugo",
+    "c": "Gustave Flaubert",
+    "d": "Molière",
+    "domaine": "Littérature",
+    "difficulte": "facile",
+    "reponse": "b"
+  },
+  {
+    "question": "Quel écrivain a créé le personnage de Sherlock Holmes ?",
+    "a": "Agatha Christie",
+    "b": "Arthur Conan Doyle",
+    "c": "Jules Verne",
+    "d": "Edgar Allan Poe",
+    "domaine": "Littérature",
+    "difficulte": "facile",
+    "reponse": "b"
+  },
+  {
+    "question": "Dans quelle œuvre trouve-t-on le personnage de Don Quichotte ?",
+    "a": "L’Iliade",
+    "b": "Don Quichotte",
+    "c": "Candide",
+    "d": "Le Rouge et le Noir",
+    "domaine": "Littérature",
+    "difficulte": "facile",
+    "reponse": "b"
+  },
+  {
+    "question": "Quel mouvement littéraire est associé à Émile Zola ?",
+    "a": "Surréalisme",
+    "b": "Naturalisme",
+    "c": "Symbolisme",
+    "d": "Classicisme",
+    "domaine": "Littérature",
+    "difficulte": "moyen",
+    "reponse": "b"
+  },
+  {
+    "question": "Qui est l’auteur du Petit Prince ?",
+    "a": "Antoine de Saint-Exupéry",
+    "b": "Albert Camus",
+    "c": "Marcel Proust",
+    "d": "Jean de La Fontaine",
+    "domaine": "Littérature",
+    "difficulte": "facile",
+    "reponse": "a"
+  },
+  {
+    "question": "Quel poète a écrit Les Fleurs du mal ?",
+    "a": "Paul Verlaine",
+    "b": "Arthur Rimbaud",
+    "c": "Charles Baudelaire",
+    "d": "Alfred de Musset",
+    "domaine": "Littérature",
+    "difficulte": "facile",
+    "reponse": "c"
+  },
+  {
+    "question": "Dans une pièce de théâtre, comment appelle-t-on les indications destinées aux acteurs ?",
+    "a": "Répliques",
+    "b": "Didascalies",
+    "c": "Strophes",
+    "d": "Apartés",
+    "domaine": "Littérature",
+    "difficulte": "moyen",
+    "reponse": "b"
+  },
+  {
+    "question": "Quel roman commence par « Aujourd’hui, maman est morte » ?",
+    "a": "L’Étranger",
+    "b": "Germinal",
+    "c": "Madame Bovary",
+    "d": "La Peste",
+    "domaine": "Littérature",
+    "difficulte": "moyen",
+    "reponse": "a"
+  },
+  {
+    "question": "Qui a écrit Roméo et Juliette ?",
+    "a": "William Shakespeare",
+    "b": "Dante Alighieri",
+    "c": "Molière",
+    "d": "Goethe",
+    "domaine": "Littérature",
+    "difficulte": "facile",
+    "reponse": "a"
+  },
+  {
+    "question": "Quel genre littéraire raconte généralement des événements imaginaires dans un récit en prose ?",
+    "a": "Roman",
+    "b": "Sonnet",
+    "c": "Ode",
+    "d": "Tragédie lyrique",
+    "domaine": "Littérature",
+    "difficulte": "facile",
+    "reponse": "a"
+  },
+  {
+    "question": "En quelle année débute la Révolution française ?",
+    "a": "1776",
+    "b": "1789",
+    "c": "1815",
+    "d": "1848",
+    "domaine": "Histoire",
+    "difficulte": "facile",
+    "reponse": "b"
+  },
+  {
+    "question": "Quel mur est tombé en 1989, symbolisant la fin de la division de Berlin ?",
+    "a": "Mur d’Hadrien",
+    "b": "Mur de Berlin",
+    "c": "Grande Muraille",
+    "d": "Mur des Lamentations",
+    "domaine": "Histoire",
+    "difficulte": "facile",
+    "reponse": "b"
+  },
+  {
+    "question": "Qui était le premier empereur romain ?",
+    "a": "Jules César",
+    "b": "Auguste",
+    "c": "Néron",
+    "d": "Constantin",
+    "domaine": "Histoire",
+    "difficulte": "moyen",
+    "reponse": "b"
+  },
+  {
+    "question": "En quelle année se termine la Seconde Guerre mondiale en Europe ?",
+    "a": "1943",
+    "b": "1944",
+    "c": "1945",
+    "d": "1946",
+    "domaine": "Histoire",
+    "difficulte": "facile",
+    "reponse": "c"
+  },
+  {
+    "question": "Quelle civilisation a construit Machu Picchu ?",
+    "a": "Maya",
+    "b": "Aztèque",
+    "c": "Inca",
+    "d": "Olmèque",
+    "domaine": "Histoire",
+    "difficulte": "facile",
+    "reponse": "c"
+  },
+  {
+    "question": "Quel événement déclenche directement la Première Guerre mondiale en 1914 ?",
+    "a": "La crise de Cuba",
+    "b": "L’assassinat de l’archiduc François-Ferdinand",
+    "c": "La révolution russe",
+    "d": "L’invasion de la Pologne",
+    "domaine": "Histoire",
+    "difficulte": "moyen",
+    "reponse": "b"
+  },
+  {
+    "question": "Quel roi de France était surnommé le Roi-Soleil ?",
+    "a": "Louis XIII",
+    "b": "Louis XIV",
+    "c": "Louis XV",
+    "d": "François Ier",
+    "domaine": "Histoire",
+    "difficulte": "facile",
+    "reponse": "b"
+  },
+  {
+    "question": "Quel traité met officiellement fin à la Première Guerre mondiale entre l’Allemagne et les Alliés ?",
+    "a": "Traité de Rome",
+    "b": "Traité de Versailles",
+    "c": "Traité de Maastricht",
+    "d": "Traité de Tordesillas",
+    "domaine": "Histoire",
+    "difficulte": "moyen",
+    "reponse": "b"
+  },
+  {
+    "question": "Quelle cité antique a été ensevelie lors de l’éruption du Vésuve en 79 ?",
+    "a": "Athènes",
+    "b": "Pompéi",
+    "c": "Carthage",
+    "d": "Sparte",
+    "domaine": "Histoire",
+    "difficulte": "facile",
+    "reponse": "b"
+  },
+  {
+    "question": "Qui fut le premier humain à marcher sur la Lune ?",
+    "a": "Youri Gagarine",
+    "b": "Neil Armstrong",
+    "c": "Buzz Aldrin",
+    "d": "Michael Collins",
+    "domaine": "Histoire",
+    "difficulte": "facile",
+    "reponse": "b"
+  },
+  {
+    "question": "Combien font 15 % de 200 ?",
+    "a": "15",
+    "b": "20",
+    "c": "30",
+    "d": "40",
+    "domaine": "Mathématiques",
+    "difficulte": "facile",
+    "reponse": "c"
+  },
+  {
+    "question": "Quelle est la valeur de 7² ?",
+    "a": "14",
+    "b": "42",
+    "c": "49",
+    "d": "56",
+    "domaine": "Mathématiques",
+    "difficulte": "facile",
+    "reponse": "c"
+  },
+  {
+    "question": "Quel est le résultat de 3/4 + 1/4 ?",
+    "a": "1/2",
+    "b": "1",
+    "c": "4/8",
+    "d": "2",
+    "domaine": "Mathématiques",
+    "difficulte": "facile",
+    "reponse": "b"
+  },
+  {
+    "question": "Combien de côtés possède un hexagone ?",
+    "a": "5",
+    "b": "6",
+    "c": "7",
+    "d": "8",
+    "domaine": "Mathématiques",
+    "difficulte": "facile",
+    "reponse": "b"
+  },
+  {
+    "question": "Quelle est la moyenne de 4, 8 et 12 ?",
+    "a": "6",
+    "b": "8",
+    "c": "10",
+    "d": "12",
+    "domaine": "Mathématiques",
+    "difficulte": "facile",
+    "reponse": "b"
+  },
+  {
+    "question": "Si x + 5 = 12, combien vaut x ?",
+    "a": "5",
+    "b": "6",
+    "c": "7",
+    "d": "17",
+    "domaine": "Mathématiques",
+    "difficulte": "facile",
+    "reponse": "c"
+  },
+  {
+    "question": "Quelle est l’aire d’un rectangle de longueur 8 cm et de largeur 3 cm ?",
+    "a": "11 cm²",
+    "b": "22 cm²",
+    "c": "24 cm²",
+    "d": "48 cm²",
+    "domaine": "Mathématiques",
+    "difficulte": "facile",
+    "reponse": "c"
+  },
+  {
+    "question": "Quel nombre est premier ?",
+    "a": "21",
+    "b": "27",
+    "c": "29",
+    "d": "33",
+    "domaine": "Mathématiques",
+    "difficulte": "moyen",
+    "reponse": "c"
+  },
+  {
+    "question": "Combien vaut 2³ × 2² ?",
+    "a": "16",
+    "b": "24",
+    "c": "32",
+    "d": "64",
+    "domaine": "Mathématiques",
+    "difficulte": "moyen",
+    "reponse": "c"
+  },
+  {
+    "question": "Quelle est la probabilité d’obtenir un six en lançant un dé équilibré à six faces ?",
+    "a": "1/2",
+    "b": "1/3",
+    "c": "1/6",
+    "d": "1/12",
+    "domaine": "Mathématiques",
+    "difficulte": "facile",
+    "reponse": "c"
+  },
+  {
+    "question": "Quel instrument possède généralement 88 touches ?",
+    "a": "Violon",
+    "b": "Piano",
+    "c": "Flûte",
+    "d": "Guitare",
+    "domaine": "Musique",
+    "difficulte": "facile",
+    "reponse": "b"
+  },
+  {
+    "question": "Combien de notes différentes compte une gamme chromatique occidentale dans une octave tempérée ?",
+    "a": "7",
+    "b": "8",
+    "c": "12",
+    "d": "16",
+    "domaine": "Musique",
+    "difficulte": "moyen",
+    "reponse": "c"
+  },
+  {
+    "question": "Quel compositeur a écrit la Neuvième Symphonie avec l’Ode à la joie ?",
+    "a": "Mozart",
+    "b": "Beethoven",
+    "c": "Bach",
+    "d": "Chopin",
+    "domaine": "Musique",
+    "difficulte": "facile",
+    "reponse": "b"
+  },
+  {
+    "question": "Quel instrument appartient à la famille des bois ?",
+    "a": "Trompette",
+    "b": "Hautbois",
+    "c": "Trombone",
+    "d": "Cor",
+    "domaine": "Musique",
+    "difficulte": "facile",
+    "reponse": "b"
+  },
+  {
+    "question": "Comment appelle-t-on la vitesse d’exécution d’un morceau ?",
+    "a": "Timbre",
+    "b": "Tempo",
+    "c": "Tonalité",
+    "d": "Nuance",
+    "domaine": "Musique",
+    "difficulte": "facile",
+    "reponse": "b"
+  },
+  {
+    "question": "Quel artiste est associé à l’album Thriller ?",
+    "a": "Prince",
+    "b": "Michael Jackson",
+    "c": "David Bowie",
+    "d": "Stevie Wonder",
+    "domaine": "Musique",
+    "difficulte": "facile",
+    "reponse": "b"
+  },
+  {
+    "question": "Dans la notation musicale, que signifie le symbole ♯ ?",
+    "a": "Bémol",
+    "b": "Dièse",
+    "c": "Bécarre",
+    "d": "Silence",
+    "domaine": "Musique",
+    "difficulte": "moyen",
+    "reponse": "b"
+  },
+  {
+    "question": "Quel genre musical est né à La Nouvelle-Orléans au début du XXe siècle ?",
+    "a": "Flamenco",
+    "b": "Jazz",
+    "c": "Reggae",
+    "d": "Techno",
+    "domaine": "Musique",
+    "difficulte": "facile",
+    "reponse": "b"
+  },
+  {
+    "question": "Quel instrument se joue généralement avec un archet ?",
+    "a": "Clarinette",
+    "b": "Violon",
+    "c": "Piano",
+    "d": "Saxophone",
+    "domaine": "Musique",
+    "difficulte": "facile",
+    "reponse": "b"
+  },
+  {
+    "question": "Combien de temps dure une mesure en 4/4 si chaque noire vaut un temps ?",
+    "a": "2 temps",
+    "b": "3 temps",
+    "c": "4 temps",
+    "d": "8 temps",
+    "domaine": "Musique",
+    "difficulte": "moyen",
+    "reponse": "c"
+  },
+  {
+    "question": "Quel sport se joue avec un volant ?",
+    "a": "Tennis",
+    "b": "Badminton",
+    "c": "Squash",
+    "d": "Tennis de table",
+    "domaine": "Sport",
+    "difficulte": "facile",
+    "reponse": "b"
+  },
+  {
+    "question": "Combien de joueurs d’une équipe de football sont sur le terrain au début d’un match ?",
+    "a": "9",
+    "b": "10",
+    "c": "11",
+    "d": "12",
+    "domaine": "Sport",
+    "difficulte": "facile",
+    "reponse": "c"
+  },
+  {
+    "question": "Dans quel sport utilise-t-on un tatami ?",
+    "a": "Natation",
+    "b": "Judo",
+    "c": "Cyclisme",
+    "d": "Golf",
+    "domaine": "Sport",
+    "difficulte": "facile",
+    "reponse": "b"
+  },
+  {
+    "question": "Quelle distance officielle mesure un marathon ?",
+    "a": "21,097 km",
+    "b": "40 km",
+    "c": "42,195 km",
+    "d": "50 km",
+    "domaine": "Sport",
+    "difficulte": "facile",
+    "reponse": "c"
+  },
+  {
+    "question": "Au tennis, que signifie le score « love » ?",
+    "a": "15 points",
+    "b": "Zéro",
+    "c": "Égalité",
+    "d": "Avantage",
+    "domaine": "Sport",
+    "difficulte": "moyen",
+    "reponse": "b"
+  },
+  {
+    "question": "Combien d’anneaux figurent sur le drapeau olympique ?",
+    "a": "4",
+    "b": "5",
+    "c": "6",
+    "d": "7",
+    "domaine": "Sport",
+    "difficulte": "facile",
+    "reponse": "b"
+  },
+  {
+    "question": "Quel pays a remporté la Coupe du monde masculine de football 2018 ?",
+    "a": "Croatie",
+    "b": "Allemagne",
+    "c": "France",
+    "d": "Argentine",
+    "domaine": "Sport",
+    "difficulte": "facile",
+    "reponse": "c"
+  },
+  {
+    "question": "Dans quel sport réalise-t-on un « strike » ?",
+    "a": "Basket-ball",
+    "b": "Bowling",
+    "c": "Rugby",
+    "d": "Hockey",
+    "domaine": "Sport",
+    "difficulte": "facile",
+    "reponse": "b"
+  },
+  {
+    "question": "Quelle nage est généralement la plus rapide en compétition ?",
+    "a": "Brasse",
+    "b": "Dos",
+    "c": "Papillon",
+    "d": "Nage libre (crawl)",
+    "domaine": "Sport",
+    "difficulte": "moyen",
+    "reponse": "d"
+  },
+  {
+    "question": "Combien de points vaut un tir réussi derrière la ligne à trois points au basket ?",
+    "a": "1",
+    "b": "2",
+    "c": "3",
+    "d": "4",
+    "domaine": "Sport",
+    "difficulte": "facile",
+    "reponse": "c"
+  },
+  {
+    "question": "Quel peintre a réalisé La Joconde ?",
+    "a": "Michel-Ange",
+    "b": "Léonard de Vinci",
+    "c": "Raphaël",
+    "d": "Caravage",
+    "domaine": "Arts",
+    "difficulte": "facile",
+    "reponse": "b"
+  },
+  {
+    "question": "À quel mouvement artistique Claude Monet est-il associé ?",
+    "a": "Cubisme",
+    "b": "Impressionnisme",
+    "c": "Pop art",
+    "d": "Surréalisme",
+    "domaine": "Arts",
+    "difficulte": "facile",
+    "reponse": "b"
+  },
+  {
+    "question": "Quel matériau est traditionnellement utilisé pour réaliser une sculpture en bronze ?",
+    "a": "Papier mâché uniquement",
+    "b": "Un alliage de cuivre et d’étain",
+    "c": "Du verre soufflé",
+    "d": "Du plâtre pur",
+    "domaine": "Arts",
+    "difficulte": "moyen",
+    "reponse": "b"
+  },
+  {
+    "question": "Quel architecte est associé à la Sagrada Família de Barcelone ?",
+    "a": "Frank Lloyd Wright",
+    "b": "Antoni Gaudí",
+    "c": "Le Corbusier",
+    "d": "Zaha Hadid",
+    "domaine": "Arts",
+    "difficulte": "facile",
+    "reponse": "b"
+  },
+  {
+    "question": "Dans la peinture, quelle couleur obtient-on en mélangeant du bleu et du jaune ?",
+    "a": "Violet",
+    "b": "Orange",
+    "c": "Vert",
+    "d": "Rose",
+    "domaine": "Arts",
+    "difficulte": "facile",
+    "reponse": "c"
+  },
+  {
+    "question": "Quel musée parisien abrite notamment la Joconde ?",
+    "a": "Musée d’Orsay",
+    "b": "Centre Pompidou",
+    "c": "Musée du Louvre",
+    "d": "Musée Rodin",
+    "domaine": "Arts",
+    "difficulte": "facile",
+    "reponse": "c"
+  },
+  {
+    "question": "Quel courant artistique est caractérisé par des formes géométriques fragmentées ?",
+    "a": "Cubisme",
+    "b": "Romantisme",
+    "c": "Baroque",
+    "d": "Rococo",
+    "domaine": "Arts",
+    "difficulte": "moyen",
+    "reponse": "a"
+  },
+  {
+    "question": "Quel cinéaste a réalisé le film Les Temps modernes ?",
+    "a": "Alfred Hitchcock",
+    "b": "Charlie Chaplin",
+    "c": "Stanley Kubrick",
+    "d": "Akira Kurosawa",
+    "domaine": "Arts",
+    "difficulte": "facile",
+    "reponse": "b"
+  },
+  {
+    "question": "Comment appelle-t-on le texte qui accompagne une œuvre dans une exposition ?",
+    "a": "Cartel",
+    "b": "Storyboard",
+    "c": "Scénario",
+    "d": "Partition",
+    "domaine": "Arts",
+    "difficulte": "moyen",
+    "reponse": "a"
+  },
+  {
+    "question": "Quel procédé photographique permet de figer un mouvement rapide ?",
+    "a": "Une vitesse d’obturation élevée",
+    "b": "Une longue exposition",
+    "c": "Une faible résolution",
+    "d": "Un zoom numérique uniquement",
+    "domaine": "Arts",
+    "difficulte": "moyen",
+    "reponse": "a"
+  },
+  {
+    "question": "Quel est le principal gaz responsable de l’effet de serre d’origine humaine en raison de ses émissions importantes ?",
+    "a": "Hélium",
+    "b": "Dioxyde de carbone",
+    "c": "Néon",
+    "d": "Argon",
+    "domaine": "Environnement",
+    "difficulte": "facile",
+    "reponse": "b"
+  },
+  {
+    "question": "Quelle énergie est produite par les panneaux photovoltaïques ?",
+    "a": "Énergie chimique",
+    "b": "Énergie électrique",
+    "c": "Énergie nucléaire",
+    "d": "Énergie mécanique",
+    "domaine": "Environnement",
+    "difficulte": "facile",
+    "reponse": "b"
+  },
+  {
+    "question": "Quel phénomène correspond à la disparition progressive d’une forêt ?",
+    "a": "Désertification marine",
+    "b": "Déforestation",
+    "c": "Eutrophisation",
+    "d": "Érosion côtière",
+    "domaine": "Environnement",
+    "difficulte": "facile",
+    "reponse": "b"
+  },
+  {
+    "question": "Que signifie le sigle biodiversité ?",
+    "a": "Variété du vivant à différents niveaux",
+    "b": "Quantité de pluie annuelle",
+    "c": "Nombre de villes par pays",
+    "d": "Vitesse du vent",
+    "domaine": "Environnement",
+    "difficulte": "moyen",
+    "reponse": "a"
+  },
+  {
+    "question": "Quelle pratique réduit généralement le gaspillage alimentaire ?",
+    "a": "Acheter sans planifier",
+    "b": "Jeter les restes systématiquement",
+    "c": "Planifier les repas et conserver correctement les aliments",
+    "d": "Laisser les produits périmer",
+    "domaine": "Environnement",
+    "difficulte": "facile",
+    "reponse": "c"
+  },
+  {
+    "question": "Quel gaz est principalement émis par la combustion incomplète du carbone et peut être mortel ?",
+    "a": "Monoxyde de carbone",
+    "b": "Oxygène",
+    "c": "Ozone",
+    "d": "Hydrogène",
+    "domaine": "Environnement",
+    "difficulte": "moyen",
+    "reponse": "a"
+  },
+  {
+    "question": "Quel organisme est à la base de nombreux réseaux alimentaires aquatiques et produit une grande partie de l’oxygène mondial ?",
+    "a": "Le phytoplancton",
+    "b": "Les requins",
+    "c": "Les coraux seuls",
+    "d": "Les méduses",
+    "domaine": "Environnement",
+    "difficulte": "difficile",
+    "reponse": "a"
+  },
+  {
+    "question": "Quel principe consiste à transformer des déchets en nouveaux matériaux ou objets ?",
+    "a": "Incinération",
+    "b": "Recyclage",
+    "c": "Enfouissement",
+    "d": "Compostage uniquement",
+    "domaine": "Environnement",
+    "difficulte": "facile",
+    "reponse": "b"
+  },
+  {
+    "question": "Quel type d’agriculture vise à limiter les intrants chimiques de synthèse et à préserver les écosystèmes ?",
+    "a": "Agriculture biologique",
+    "b": "Monoculture intensive",
+    "c": "Agriculture hors-sol exclusivement",
+    "d": "Agriculture minière",
+    "domaine": "Environnement",
+    "difficulte": "moyen",
+    "reponse": "a"
+  },
+  {
+    "question": "Quelle couche de l’atmosphère contient la majeure partie de l’ozone qui filtre les UV ?",
+    "a": "Troposphère",
+    "b": "Stratosphère",
+    "c": "Mésosphère",
+    "d": "Thermosphère",
+    "domaine": "Environnement",
+    "difficulte": "difficile",
+    "reponse": "b"
+  },
+  {
+    "question": "Quel est le rôle principal d’une banque centrale ?",
+    "a": "Fixer toutes les dépenses des ménages",
+    "b": "Conduire la politique monétaire",
+    "c": "Gérer les commerces de détail",
+    "d": "Produire les biens industriels",
+    "domaine": "Économie",
+    "difficulte": "moyen",
+    "reponse": "b"
+  },
+  {
+    "question": "Que mesure généralement le produit intérieur brut (PIB) ?",
+    "a": "La valeur des biens et services finaux produits sur un territoire pendant une période",
+    "b": "Le patrimoine de chaque habitant",
+    "c": "Le montant des impôts uniquement",
+    "d": "Le nombre total d’entreprises",
+    "domaine": "Économie",
+    "difficulte": "moyen",
+    "reponse": "a"
+  },
+  {
+    "question": "Que se passe-t-il généralement lorsque la demande augmente et que l’offre reste constante ?",
+    "a": "Le prix tend à augmenter",
+    "b": "Le prix tend à diminuer",
+    "c": "La production devient nulle",
+    "d": "La monnaie disparaît",
+    "domaine": "Économie",
+    "difficulte": "moyen",
+    "reponse": "a"
+  },
+  {
+    "question": "Qu’est-ce qu’un budget équilibré ?",
+    "a": "Les dépenses dépassent les recettes",
+    "b": "Les recettes égalent les dépenses",
+    "c": "Il n’y a aucune recette",
+    "d": "Toutes les dépenses sont financées par un emprunt",
+    "domaine": "Économie",
+    "difficulte": "facile",
+    "reponse": "b"
+  },
+  {
+    "question": "Que désigne l’inflation ?",
+    "a": "Une baisse générale et durable des prix",
+    "b": "Une hausse générale et durable des prix",
+    "c": "Une hausse du chômage uniquement",
+    "d": "Une augmentation de la production agricole uniquement",
+    "domaine": "Économie",
+    "difficulte": "facile",
+    "reponse": "b"
+  },
+  {
+    "question": "Quel est le rôle d’un impôt sur la consommation comme la TVA ?",
+    "a": "Taxer certains achats de biens et services",
+    "b": "Taxer uniquement les salaires",
+    "c": "Financer uniquement les exportations",
+    "d": "Remplacer la monnaie",
+    "domaine": "Économie",
+    "difficulte": "facile",
+    "reponse": "a"
+  },
+  {
+    "question": "Qu’appelle-t-on diversification d’un portefeuille ?",
+    "a": "Investir tout son argent dans un seul actif",
+    "b": "Répartir les investissements entre plusieurs actifs",
+    "c": "Ne conserver que des espèces",
+    "d": "Emprunter pour chaque achat",
+    "domaine": "Économie",
+    "difficulte": "moyen",
+    "reponse": "b"
+  },
+  {
+    "question": "Que signifie le terme « chômage » au sens statistique courant ?",
+    "a": "Toute personne qui ne travaille pas",
+    "b": "Une personne sans emploi, disponible et en recherche active selon les critères retenus",
+    "c": "Toute personne à la retraite",
+    "d": "Un salarié en congé",
+    "domaine": "Économie",
+    "difficulte": "moyen",
+    "reponse": "b"
+  },
+  {
+    "question": "Qu’est-ce qu’un monopole ?",
+    "a": "Un marché avec un seul offreur",
+    "b": "Un marché avec beaucoup d’offreurs identiques",
+    "c": "Un marché sans acheteur",
+    "d": "Un marché réservé aux associations",
+    "domaine": "Économie",
+    "difficulte": "facile",
+    "reponse": "a"
+  },
+  {
+    "question": "Quel document présente les recettes et les dépenses prévues d’une organisation pour une période ?",
+    "a": "Un bilan carbone",
+    "b": "Un budget prévisionnel",
+    "c": "Un contrat de travail",
+    "d": "Un inventaire physique",
+    "domaine": "Économie",
+    "difficulte": "facile",
+    "reponse": "b"
+  }
+]
