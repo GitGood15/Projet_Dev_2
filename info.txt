@@ -3,4 +3,4 @@ Utilisation de l'ia pour maintenir la coherence dans les formules mathematique e
 
 SEED :
 La seed du questionnaire permet de determiner le nombre de question avec le dernier chiffre (0-9 -> 10 a 100 questions possibles (le mec qui met 100 questions pour son test faut aller se faire foutre))
-la seed doit faire 4 chiffres de long
+la seed doit faire 4 chiffres de long et commencer par 1
