@@ -16,3 +16,40 @@ class Equipe:
         
         self.__capitaine = capitaine
         self.__scores = []
+        
+    @property
+    def id(self) -> str:
+        return self.__id
+
+    @property
+    def nom_soiree(self) -> str:
+        return self.__nom_soiree
+
+    @property
+    def nb_participants(self) -> int:
+        return self.__nb_participants
+
+    @property
+    def vainqueur_subsidiaire(self) -> bool:
+        return self.__vainqueur_subsidiaire
+
+    @property
+    def capitaine(self) -> Capitaine:
+        return self.__capitaine
+
+    @property
+    def scores(self) -> List['Score']:
+        return list(self.__scores)
+    
+    def ajouter_score(self, score: 'Score') -> None:
+        """Associe un score de manche à l'équipe."""
+        if score not in self.__scores:
+            self.__scores.append(score)
+    
+    def calculer_score_total(self) -> int:
+        """Calcule le score total de l'équipe sur la soirée."""
+        return sum(score.calculer_points_manche() for score in self.__scores)
+    
+    def definir_vainqueur_subsidiaire(self, est_vainqueur: bool) -> None:
+        """Met à jour le statut de départage en cas d'égalité au classement final."""
+        self.__vainqueur_subsidiaire = est_vainqueur
