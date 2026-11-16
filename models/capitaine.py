@@ -6,11 +6,11 @@ if TYPE_CHECKING:
 
 class Capitaine:
     def __init__(self, nom: str, prenom: str, telephone: str):
-        self.__id: str(uuid.uuid4())
-        self.__nom: nom
-        self.__prenom: prenom
-        self.__telephone: telephone
-        self.__points_soirees: []
+        self.__id = str(uuid.uuid4())
+        self.__nom = nom
+        self.__prenom = prenom
+        self.__telephone = telephone
+        self.__points_soirees = []
     
     @property
     def id(self) -> str:
