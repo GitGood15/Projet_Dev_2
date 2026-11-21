@@ -21,7 +21,7 @@ class Manche:
     
     @property
     def scores(self) -> list:
-        return list(self.__scores.values())
+        return list(self.__scores)
 
     @property
     def questions(self) -> list:
