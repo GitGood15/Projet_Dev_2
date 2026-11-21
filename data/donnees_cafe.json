@@ -1,0 +1,162 @@
+{
+  "nom": "Le Comptoir des Curieux",
+  "capitaines": [
+    {
+      "id": "de80ae91-3900-4272-8ae8-1a1f56be9401",
+      "nom": "test",
+      "prenom": "rocket",
+      "telephone": "0472886598",
+      "points_soirees": []
+    },
+    {
+      "id": "585efb25-cdd3-4a71-8ba4-2761d8c3d45f",
+      "nom": "Joubi",
+      "prenom": "Joub",
+      "telephone": "0472886598",
+      "points_soirees": []
+    },
+    {
+      "id": "927cc135-5eb4-4da2-8fd2-ad37ef7d6b53",
+      "nom": "test",
+      "prenom": "test",
+      "telephone": "0472886598",
+      "points_soirees": []
+    }
+  ],
+  "questions": [],
+  "soirees": [
+    {
+      "date": "2026-11-17",
+      "nb_manches": 6,
+      "nb_questions_par_manche": 8,
+      "en_cours": false,
+      "equipes": [],
+      "manches": [
+        {
+          "numero": 1,
+          "est_a_miser": false,
+          "scores": []
+        },
+        {
+          "numero": 2,
+          "est_a_miser": false,
+          "scores": []
+        },
+        {
+          "numero": 3,
+          "est_a_miser": false,
+          "scores": []
+        },
+        {
+          "numero": 4,
+          "est_a_miser": false,
+          "scores": []
+        },
+        {
+          "numero": 5,
+          "est_a_miser": false,
+          "scores": []
+        },
+        {
+          "numero": 6,
+          "est_a_miser": true,
+          "scores": []
+        }
+      ]
+    },
+    {
+      "date": "2026-11-18",
+      "nb_manches": 6,
+      "nb_questions_par_manche": 8,
+      "en_cours": false,
+      "equipes": [],
+      "manches": [
+        {
+          "numero": 1,
+          "est_a_miser": false,
+          "scores": []
+        },
+        {
+          "numero": 2,
+          "est_a_miser": false,
+          "scores": []
+        },
+        {
+          "numero": 3,
+          "est_a_miser": false,
+          "scores": []
+        },
+        {
+          "numero": 4,
+          "est_a_miser": false,
+          "scores": []
+        },
+        {
+          "numero": 5,
+          "est_a_miser": false,
+          "scores": []
+        },
+        {
+          "numero": 6,
+          "est_a_miser": false,
+          "scores": []
+        }
+      ]
+    },
+    {
+      "date": "2026-11-18",
+      "nb_manches": 6,
+      "nb_questions_par_manche": 8,
+      "en_cours": true,
+      "equipes": [
+        {
+          "id": "01fdda83-d341-435d-bbf1-99e894928f5e",
+          "nom_soiree": "joubert",
+          "nb_participants": 12,
+          "vainqueur_subsidiaire": false,
+          "capitaine_id": "927cc135-5eb4-4da2-8fd2-ad37ef7d6b53"
+        }
+      ],
+      "manches": [
+        {
+          "numero": 1,
+          "est_a_miser": false,
+          "scores": [
+            {
+              "equipe_id": "01fdda83-d341-435d-bbf1-99e894928f5e",
+              "points_base": 2,
+              "mise": 0,
+              "bonne_reponse_mise": true
+            }
+          ]
+        },
+        {
+          "numero": 2,
+          "est_a_miser": false,
+          "scores": []
+        },
+        {
+          "numero": 3,
+          "est_a_miser": false,
+          "scores": []
+        },
+        {
+          "numero": 4,
+          "est_a_miser": false,
+          "scores": []
+        },
+        {
+          "numero": 5,
+          "est_a_miser": false,
+          "scores": []
+        },
+        {
+          "numero": 6,
+          "est_a_miser": false,
+          "scores": []
+        }
+      ]
+    }
+  ],
+  "championnats": []
+}
