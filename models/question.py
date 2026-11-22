@@ -2,7 +2,7 @@ import uuid
 from datetime import date
 
 class Question:
-    def __init__(self, enonce : str, reponse : str, theme : str, niveau_difficulte : int, derniere_utilisation : date = None):
+    def __init__(self, enonce : str, reponse : str, theme : str, niveau_difficulte : int, derniere_utilisation : date = None, id: str = None):
         if not enonce or not enonce.strip():
             raise ValueError("L'énoncé de la question est obligatoire.")
         if not reponse or not reponse.strip():
@@ -10,7 +10,7 @@ class Question:
         if niveau_difficulte < 1 or niveau_difficulte > 3:
             raise ValueError("Le niveau de difficulté doit être compris entre 1 et 3.")
         
-        self.__id = str(uuid.uuid4())
+        self.__id = id or str(uuid.uuid4())
         self.__enonce = enonce.strip()
         self.__reponse = reponse.strip()
         self.__theme = theme.strip() if theme else "Général"

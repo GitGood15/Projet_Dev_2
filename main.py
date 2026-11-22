@@ -1,4 +1,3 @@
-"""
 from models.cafe import Cafe
 from ui.interface_cli import InterfaceCLI
 
@@ -22,3 +21,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+"""

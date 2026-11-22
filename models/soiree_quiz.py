@@ -68,19 +68,40 @@ class SoireeQuiz:
 
         self.__manches.append(m)
 
+    def definir_manche_a_miser(self, numero: int) -> Manche:
+        """Une seule manche à miser par soirée. Les mises déjà jouées ne sont pas déplacées."""
+        cible = next((m for m in self.__manches if m.numero == numero), None)
+        if cible is None:
+            raise ValueError(f"La manche numéro {numero} n'existe pas dans cette soirée.")
+
+        for manche in self.__manches:
+            if manche is not cible and manche.est_a_miser:
+                if manche.scores:
+                    raise ValueError(
+                        f"La manche {manche.numero} est déjà la manche à miser et des mises y sont enregistrées."
+                    )
+                manche.definir_est_a_miser(False)
+        cible.definir_est_a_miser(True)
+        return cible
+
+    def obtenir_manche(self, manche_num: int) -> Manche:
+        manche = next((m for m in self.__manches if m.numero == manche_num), None)
+        if manche is None:
+            raise ValueError(f"La manche numéro {manche_num} n'existe pas dans cette soirée.")
+        return manche
+
     def enregistrer_score_equipe(self, e: Equipe, manche_num: int, pts: int) -> None:
         """Enregistre le score d'une équipe pour une manche donnée."""
         if e not in self.__equipes:
             raise ValueError("L'équipe n'est pas inscrite à cette soirée.")
 
-        manche_cible = None
-        for m in self.__manches:
-            if m.numero == manche_num:
-                manche_cible = m
-                break
-
-        if manche_cible is None:
-            raise ValueError(f"La manche numéro {manche_num} n'existe pas dans cette soirée.")
+        manche_cible = self.obtenir_manche(manche_num)
+        if manche_cible.est_a_miser:
+            raise ValueError("Cette manche est une manche à miser : encodez la mise, pas un score classique.")
+        if pts < 0 or pts > self.__nb_questions_par_manche:
+            raise ValueError(
+                f"Un score de manche classique doit être compris entre 0 et {self.__nb_questions_par_manche}."
+            )
 
         manche_cible.enregistrer_score(e, pts, 0, True)
 
@@ -89,21 +110,15 @@ class SoireeQuiz:
         if e not in self.__equipes:
             raise ValueError("L'équipe n'est pas inscrite à cette soirée.")
 
-        manche_cible = None
-        for m in self.__manches:
-            if m.numero == manche_num:
-                manche_cible = m
-                break
+        manche_cible = self.obtenir_manche(manche_num)
+        if not manche_cible.est_a_miser and (
+            nouveaux_pts < 0 or nouveaux_pts > self.__nb_questions_par_manche
+        ):
+            raise ValueError(
+                f"Un score de manche classique doit être compris entre 0 et {self.__nb_questions_par_manche}."
+            )
 
-        if manche_cible is None:
-            raise ValueError(f"La manche numéro {manche_num} n'existe pas dans cette soirée.")
-
-        score_trouve = None
-        for s in manche_cible.scores:
-            if s in e.scores:
-                score_trouve = s
-                break
-
+        score_trouve = manche_cible.score_pour(e)
         if score_trouve is None:
             raise ValueError("Aucun score n'a encore été encodé pour cette équipe sur cette manche.")
 

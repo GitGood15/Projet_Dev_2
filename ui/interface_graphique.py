@@ -52,6 +52,15 @@ class ComptoirQuizLayout(BoxLayout):
             f.write(self.__cafe.serialiser_etat())
         self.__rafraichir_entete()
 
+    def __equipe_par_nom(self, soiree: SoireeQuiz, nom: str):
+        nom_clean = nom.strip().lower()
+        if not nom_clean:
+            raise ValueError("Indiquez le nom de l'équipe.")
+        for equipe in soiree.equipes:
+            if equipe.nom_soiree.lower() == nom_clean:
+                return equipe
+        raise ValueError(f"Aucune équipe nommée « {nom.strip()} » dans cette soirée.")
+
     def __obtenir_soiree_active(self) -> SoireeQuiz:
         for s in self.__cafe.soirees:
             if s.en_cours:
@@ -207,22 +216,35 @@ class ComptoirQuizLayout(BoxLayout):
 
         self.__zone_contenu.add_widget(grille)
 
+        soiree_active = self.__obtenir_soiree_active()
+        if soiree_active is None:
+            self.__zone_contenu.add_widget(Label(
+                text="Aucune soirée en cours. Créez-en une dans F-03 avant d'inscrire une équipe.",
+                size_hint_y=None,
+                height=36
+            ))
+
         btn_valider = Button(text="Créer et inscrire l'équipe", size_hint_y=None, height=45)
 
         def valider(_):
             try:
+                soiree = self.__obtenir_soiree_active()
+                if soiree is None:
+                    raise ValueError(
+                        "Aucune soirée en cours. Organisez d'abord une soirée (F-03) : l'équipe doit y être inscrite."
+                    )
+
                 nom_c = in_nom_cap.text.strip()
                 prenom_c = in_prenom_cap.text.strip()
                 cap = self.__cafe.rechercher_capitaine(nom_c, prenom_c)
+                if cap is not None and any(eq.capitaine.id == cap.id for eq in soiree.equipes):
+                    raise ValueError("Ce capitaine a déjà une équipe inscrite ce soir.")
                 if cap is None:
                     cap = self.__cafe.creer_capitaine(nom_c, prenom_c, in_tel.text.strip())
 
                 nb_p = int(in_nb.text or "1")
                 equipe = self.__cafe.creer_equipe(cap, in_nom_eq.text.strip(), nb_p)
-
-                soiree = self.__obtenir_soiree_active()
-                if soiree is not None:
-                    soiree.inscrire_equipe(equipe)
+                soiree.inscrire_equipe(equipe)
 
                 self.__sauvegarder_auto()
                 self.__notifier(f"Équipe '{equipe.nom_soiree}' enregistrée (Capitaine : {cap.prenom} {cap.nom}).")
@@ -294,6 +316,17 @@ class ComptoirQuizLayout(BoxLayout):
         barre_actions.add_widget(btn_importer)
         self.__zone_contenu.add_widget(barre_actions)
 
+        soiree_active = self.__obtenir_soiree_active()
+        in_manche_posee = TextInput(text="1", input_filter="int", multiline=False, size_hint_x=None, width=70)
+        if soiree_active is not None:
+            barre_posee = BoxLayout(size_hint_y=None, height=36, spacing=8)
+            barre_posee.add_widget(Label(
+                text="Pour appliquer le délai d'un an, indiquez la manche où la question est posée ce soir :",
+                font_size="13sp"
+            ))
+            barre_posee.add_widget(in_manche_posee)
+            self.__zone_contenu.add_widget(barre_posee)
+
         # Liste défilante des questions
         scroll = ScrollView()
         liste_box = BoxLayout(orientation="vertical", size_hint_y=None, spacing=4)
@@ -312,11 +345,32 @@ class ComptoirQuizLayout(BoxLayout):
             btn_suppr = Button(text="Supprimer", size_hint_x=None, width=100)
             btn_suppr.bind(on_press=lambda _, q_id=q.id: self.__supprimer_question(q_id))
             ligne.add_widget(lbl_q)
+            if soiree_active is not None and q.est_disponible(soiree_active.date):
+                btn_posee = Button(text="Posée ce soir", size_hint_x=None, width=130)
+                btn_posee.bind(on_press=lambda _, q_id=q.id, champ=in_manche_posee: self.__poser_question(q_id, champ.text))
+                ligne.add_widget(btn_posee)
             ligne.add_widget(btn_suppr)
             liste_box.add_widget(ligne)
 
         scroll.add_widget(liste_box)
         self.__zone_contenu.add_widget(scroll)
+
+    def __poser_question(self, q_id: str, numero_manche: str) -> None:
+        try:
+            soiree = self.__obtenir_soiree_active()
+            if soiree is None:
+                raise ValueError("Aucune soirée en cours. Une question n'est marquée utilisée que lorsqu'elle est posée.")
+            question = next((q for q in self.__cafe.questions if q.id == q_id), None)
+            if question is None:
+                raise ValueError("Question introuvable.")
+            manche = soiree.obtenir_manche(int(numero_manche or "1"))
+            self.__cafe.sauvegarder_etat_temporaire()
+            manche.poser_question(question, soiree.date)
+            self.__sauvegarder_auto()
+            self.__notifier("Question marquée comme posée. Elle ne pourra pas revenir avant un an (RM-05).")
+            self.__afficher_questions()
+        except Exception as e:
+            self.__notifier(str(e), erreur=True)
 
     def __supprimer_question(self, q_id: str) -> None:
         try:

@@ -5,8 +5,8 @@ if TYPE_CHECKING:
     from models.equipe import Equipe
 
 class Capitaine:
-    def __init__(self, nom: str, prenom: str, telephone: str):
-        self.__id = str(uuid.uuid4())
+    def __init__(self, nom: str, prenom: str, telephone: str, id: str = None):
+        self.__id = id or str(uuid.uuid4())
         self.__nom = nom
         self.__prenom = prenom
         self.__telephone = telephone

@@ -27,9 +27,42 @@ class Manche:
     def questions(self) -> list:
         return list(self.__questions)
     
+    def definir_est_a_miser(self, est_a_miser: bool) -> None:
+        """Désigne ou retire cette manche comme manche à miser."""
+        self.__est_a_miser = est_a_miser
+
+    def score_pour(self, e: Equipe):
+        """Retourne le score déjà encodé pour cette équipe, s'il existe."""
+        if e is None:
+            return None
+        for score in self.__scores:
+            if score in e.scores:
+                return score
+        return None
+
+    def poser_question(self, question, date_soiree) -> None:
+        """Associe une question à la manche et bloque sa réutilisation pendant un an."""
+        if question is None:
+            raise ValueError("La question ne peut pas être nulle.")
+        if any(q.id == question.id for q in self.__questions):
+            raise ValueError("Cette question est déjà posée dans cette manche.")
+        if not question.est_disponible(date_soiree):
+            raise ValueError("Cette question ne peut pas être reposée avant un an.")
+        question.marquer_utilisee(date_soiree)
+        self.__questions.append(question)
+
+    def lier_question(self, question) -> None:
+        """Rattache une question déjà enregistrée, sans modifier sa date d'utilisation."""
+        if question is not None and all(q.id != question.id for q in self.__questions):
+            self.__questions.append(question)
+
     def enregistrer_score(self, e: Equipe, pts: int, mise: int, correcte: bool) -> Score:
         if e is None:
             raise ValueError("L'équipe ne peut pas être nulle.")
+        if self.score_pour(e) is not None:
+            raise ValueError(
+                "Un score est déjà encodé pour cette équipe sur cette manche. Modifiez le score existant."
+            )
 
         if self.__est_a_miser:
             score = Score(0, mise, correcte)

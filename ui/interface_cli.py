@@ -73,15 +73,15 @@ class InterfaceCLI:
 			statut = f"En cours ({active.date:%d/%m/%Y})" if active else "Aucune"
 			print(f"\n=== {self.__cafe.nom.upper()} — GESTION QUIZ ===")
 			print(f"Soirée active : {statut}")
-			print("1. Gérer les équipes (F-01)")
-			print("2. Gérer / importer les questions (F-02)")
-			print("3. Organiser une soirée (F-03)")
-			print("4. Encoder / corriger les scores et mises (F-04, F-07)")
-			print("5. Clôturer la soirée et attribuer les points (F-06)")
-			print("6. Consulter l'historique (F-05)")
-			print("7. Consulter / clôturer le championnat (F-06)")
-			print("8. Sauvegarder / restaurer (F-08)")
-			print("9. Annuler la dernière modification (F-09)")
+			print("1. Gérer les équipes")
+			print("2. Gérer / importer les questions")
+			print("3. Organiser une soirée")
+			print("4. Encoder / corriger les scores et mises")
+			print("5. Clôturer la soirée et attribuer les points")
+			print("6. Consulter l'historique")
+			print("7. Consulter / clôturer le championnat")
+			print("8. Sauvegarder / restaurer")
+			print("9. Annuler la dernière modification")
 			print("0. Quitter")
 			choix = input("Votre choix : ").strip()
 			if choix == "0":
@@ -103,7 +103,7 @@ class InterfaceCLI:
 		print("[OK] Dernière modification annulée.")
 
 	def __menu_equipes(self) -> None:
-		print("\n--- F-01 : INSCRIPTION D'UNE ÉQUIPE ---")
+		print("\n--- INSCRIPTION D'UNE ÉQUIPE ---")
 		soiree = self.__obtenir_soiree_active()
 		if soiree is None:
 			raise ValueError("Organisez d'abord une soirée (menu 3) : les équipes sont enregistrées dans la soirée.")
@@ -123,8 +123,11 @@ class InterfaceCLI:
 		print(f"[OK] Équipe « {equipe.nom_soiree} » enregistrée.")
 
 	def __menu_questions(self) -> None:
-		print("\n--- F-02 : BANQUE DE QUESTIONS ---")
-		print("1. Ajouter  2. Supprimer  3. Importer CSV/JSON  4. Lister")
+		print("\n--- BANQUE DE QUESTIONS ---")
+		print("1. Ajouter")
+		print("2. Supprimer")
+		print("3. Importer CSV/JSON")
+		print("4. Lister")
 		choix = input("Votre choix : ").strip()
 		if choix == "1":
 			question = Question(input("Énoncé : ").strip(), input("Réponse attendue : ").strip(),
@@ -179,8 +182,9 @@ class InterfaceCLI:
 			raise ValueError("Aucune soirée n'est en cours.")
 		if not soiree.equipes:
 			raise ValueError("Aucune équipe n'est inscrite à la soirée.")
-		print("\n--- F-04 / F-07 : SCORES ---")
-		print("1. Encoder les scores d'une manche  2. Corriger un score")
+		print("\n--- SCORES ---")
+		print("1. Encoder les scores d'une manche")
+		print("2. Corriger un score")
 		print(f"3. {'Masquer' if self.__classement_visible else 'Afficher'} le classement")
 		print("4. Départager une égalité")
 		choix = input("Votre choix : ").strip()
@@ -296,8 +300,9 @@ class InterfaceCLI:
 				print("[OK] Points de championnat réinitialisés.")
 
 	def __menu_sauvegarde(self) -> None:
-		print("\n--- F-08 : SAUVEGARDE / RESTAURATION ---")
-		print("1. Sauvegarder sur un support externe  2. Restaurer depuis un fichier JSON")
+		print("\n--- SAUVEGARDE / RESTAURATION ---")
+		print("1. Sauvegarder sur un support externe")
+		print("2. Restaurer depuis un fichier JSON")
 		choix = input("Votre choix : ").strip()
 		if choix == "1":
 			chemin = input("Dossier du support externe (ex. E:\\) : ").strip().strip('"')

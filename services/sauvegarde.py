@@ -5,7 +5,6 @@ from models.cafe import Cafe
 
 class Sauvegarde:
     def __init__(self, chemin_usb: str = "", date_sauvegarde: date = None):
-        # Attributs exacts du diagramme de classes
         self.__date_sauvegarde = date_sauvegarde
         self.__chemin_usb = chemin_usb
 
@@ -18,15 +17,15 @@ class Sauvegarde:
         return self.__chemin_usb
 
     def verifier_support_externe(self, chemin_usb: str) -> bool:
-        """Vérifie qu'une clé USB est connectée et accessible en écriture (EF-08.2, Diagramme F-08)."""
+        """Vérifie qu'une clé USB est connectée et accessible en écriture."""
         if not chemin_usb or not chemin_usb.strip():
             return False
         return os.path.isdir(chemin_usb) and os.access(chemin_usb, os.W_OK)
 
     def exporter_donnees(self, cafe: Cafe, chemin_usb: str) -> None:
-        """Exporte l'ensemble des données du café sur la clé USB au format JSON (D-06, EF-08.1, EF-08.2)."""
+        """Exporte l'ensemble des données du café sur la clé USB au format JSON."""
         if not self.verifier_support_externe(chemin_usb):
-            raise FileNotFoundError("Clé USB non connectée ou inaccessible (EF-08.2).")
+            raise FileNotFoundError("Clé USB non connectée ou inaccessible.")
         if cafe is None:
             raise ValueError("L'instance de Cafe ne peut pas être nulle.")
 
@@ -41,7 +40,7 @@ class Sauvegarde:
             fichier.write(donnees_completes)
 
     def importer_donnees(self, chemin_fichier: str) -> str:
-        """Lit un fichier de sauvegarde existant et retourne son contenu sérialisé (EF-08.3, Diagramme F-08)."""
+        """Lit un fichier de sauvegarde existant et retourne son contenu sérialisé."""
         if not chemin_fichier or not os.path.isfile(chemin_fichier):
             raise FileNotFoundError(f"Fichier de sauvegarde introuvable : '{chemin_fichier}' (EF-08.3).")
 
