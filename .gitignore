@@ -1,0 +1,4 @@
+#don't push wiki folder
+wiki/
+#Don't push interface graphique for now
+ui/interface_graphique.py
