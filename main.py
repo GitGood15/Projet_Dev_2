@@ -17,14 +17,14 @@ def main() -> None:
         help="lancer la démo simplifiée en ligne de commande",
     )
     modes.add_argument(
-        "--demo-kivy",
+        "--demo-graphique",
         action="store_true",
         help="lancer la démo simplifiée dans une interface graphique Kivy",
     )
     arguments = parser.parse_args()
 
     cafe = Cafe("Le Comptoir des Curieux")
-    if arguments.demo_kivy:
+    if arguments.demo_graphique:
         os.environ["KIVY_NO_ARGS"] = "1"
         from ui.interface_demo_kivy import DemoQuizKivyApp
 
